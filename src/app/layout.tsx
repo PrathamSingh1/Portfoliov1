@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Figtree, Geist, Geist_Mono, Inter } from "next/font/google";
+import { Figtree, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -23,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${figtree.variable} ${inter.variable} h-full antialiased`}
+      className={`${figtree.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
