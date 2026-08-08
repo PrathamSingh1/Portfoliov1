@@ -10,7 +10,7 @@ export default function Home() {
       <VerticalLine className="right-[28%]" />
       <HorizontalLine className="top-[22vh]" />
       <div className="h-[22vh] overflow-hidden">
-        <Banner className="h-[22vh]" />
+        <Banner />
       </div>
     </Container>
   );

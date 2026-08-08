@@ -5,7 +5,7 @@ export const Banner = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "absolute left-0 right-0 md:left-[28%] md:right-[28%] top-0 -z-0 pointer-events-auto dark:bg-black shadow-[0_4px_12px_rgba(2,6,23,0.04)] dark:shadow-[0_4px_12px_rgba(2,6,23,0.10)]",
+        "absolute h-[22vh] left-0 right-0 md:left-[28%] md:right-[28%] top-0 -z-0 pointer-events-auto dark:bg-black shadow-[0_4px_12px_rgba(2,6,23,0.04)] dark:shadow-[0_4px_12px_rgba(2,6,23,0.10)]",
         className,
       )}
     >
