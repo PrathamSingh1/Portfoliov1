@@ -44,12 +44,13 @@
   --color-card-color-foreground: var(--card-color-foreground);
   --color-hr: var(--hr-color);
   --color-muted-light: var(--muted-light);
-  --spacing-xs: 6px;
-  --spacing-sm: 8px;
-  --spacing-md: 14px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 40px;
+  --spacing-1: 6px;
+  --spacing-2: 8px;
+  --spacing-3: 14px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 40px;
+  --spacing-7: 70px;
 }
 
 
