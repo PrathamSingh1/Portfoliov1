@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -33,7 +34,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        {children}
+        <ThemeProvider
+          defaultTheme="system"
+          enableSystem
+          attribute="class"
+          disableTransitionOnChange
+        >
+          <main className="bg-background text-foreground">{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
