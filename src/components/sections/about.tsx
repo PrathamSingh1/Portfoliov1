@@ -1,3 +1,5 @@
+import { Button } from "../ui/button";
+
 export const About = () => {
   return (
     <div className="absolute left-0 right-0 top-[calc(22vh+110px)] md:left-[28%] md:right-[28%] px-3 py-5 font-figtree text-sm leading-[16px] text-muted-foreground">
@@ -33,6 +35,7 @@ export const About = () => {
           for new challenges and opportunities to grow as a developer.
         </p>
       </div>
+      <Button>Twitter DM</Button>
     </div>
   );
 };
