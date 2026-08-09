@@ -8,7 +8,7 @@ export const HorizontalLine = ({
   return (
     <div
       className={cn(
-        "absolute left-0 right-0 h-0 border-b border-black/30 dark:border-white/[0.15] pointer-events-none",
+        "absolute top-0 left-0 right-0 h-0 border-t border-black/30 dark:border-white/[0.15] pointer-events-none",
         className,
       )}
       style={{
@@ -17,6 +17,6 @@ export const HorizontalLine = ({
         WebkitMaskImage:
           "repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)",
       }}
-    ></div>
+    />
   );
 };
