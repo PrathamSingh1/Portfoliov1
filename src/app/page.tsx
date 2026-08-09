@@ -38,9 +38,12 @@ export default function Home() {
         <Banner />
       </div>
 
-      {/*Box 2: Pro*/}
+      {/*Box 2: Profile section*/}
       <Profile />
       <HorizontalLine className="top-[calc(22vh+112px)]" />
+
+      {/*Box 3: About section*/}
+      
     </Container>
   );
 }

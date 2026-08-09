@@ -29,10 +29,10 @@ export const Profile = () => {
                 className="hover:fill-destructive hover:stroke-destructive"
               />
             </h3>
-            <h1 className="text-2xl font-bold text-foreground leading-[16px] mb-2 tracking-tight">
+            <h1 className="text-2xl font-bold text-foreground font-inter leading-[16px] mb-2 tracking-tight">
               Pratham Singh
             </h1>
-            <h2 className="text-base text-foreground tracking-normal">
+            <h2 className="text-base text-foreground font-inter tracking-normal">
               Full Stack Developer
             </h2>
           </div>
