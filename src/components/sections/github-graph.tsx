@@ -217,7 +217,7 @@ export function GithubGraph() {
 
   return (
     <section
-      className="px-3.5 py-3 relative font-figtree text-sm leading-[16px] mb-6"
+      className="px-3.5 py-3 relative font-figtree text-sm leading-[16px]"
       aria-labelledby="github-activity-title"
       aria-describedby="github-activity-summary"
     >

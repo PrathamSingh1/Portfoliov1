@@ -1,5 +1,6 @@
 import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
+import { Project } from "@/components/projects/project";
 import { About } from "@/components/sections/about";
 import { GithubGraph } from "@/components/sections/github-graph";
 import { Profile } from "@/components/sections/profile";
@@ -17,6 +18,7 @@ export default function Home() {
         <Profile />
         <About />
         <GithubGraph />
+        <Project />
       </Container>
     </div>
   );
