@@ -23,6 +23,12 @@ type ProjectCardProps = {
   className?: string;
 };
 
+const liveStatusColor: Record<ProjectCardProps["live"], string> = {
+  Live: "bg-chart-2",
+  Building: "bg-yellow-500",
+  "Coming Soon": "bg-foreground/30",
+};
+
 export const ProjectCard = ({
   title,
   description,
@@ -57,7 +63,7 @@ export const ProjectCard = ({
           <span
             className={cn(
               "size-2 rounded-full",
-              live === "Live" ? "bg-chart-2" : "bg-foreground/30",
+              liveStatusColor[live],
             )}
           />
         </div>
@@ -69,7 +75,7 @@ export const ProjectCard = ({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[10px] font-inter flex items-center gap-1 px-2 py-1 rounded-radius bg-card-color-foreground text-foreground hover:bg-accent transition-colors"
+                className="text-[10px] font-inter flex items-center gap-1 px-2 py-1 rounded-radius bg-card-color-foreground text-muted-foreground group-hover:text-foreground hover:bg-accent transition-colors duration-300"
               >
                 Live
                 <IconArrowRightDashed size={12} />
@@ -80,7 +86,7 @@ export const ProjectCard = ({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[10px] font-inter flex items-center gap-1 px-2 py-1 rounded-radius bg-card-color-foreground text-foreground/80 hover:bg-accent transition-colors"
+                className="text-[10px] font-inter flex items-center gap-1 px-2 py-1 rounded-radius bg-card-color-foreground  text-muted-foreground group-hover:text-foreground hover:bg-accent transition-colors duration-300"
               >
                 GitHub
                 <GitHubIcon className="size-3" />
