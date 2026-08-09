@@ -1,5 +1,6 @@
 import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
+import { About } from "@/components/sections/about";
 import { Profile } from "@/components/sections/profile";
 import { HorizontalLine } from "@/components/ui/horizontal-line";
 import { VerticalLine } from "@/components/ui/vertical-line";
@@ -43,7 +44,7 @@ export default function Home() {
       <HorizontalLine className="top-[calc(22vh+112px)]" />
 
       {/*Box 3: About section*/}
-      
+      <About />
     </Container>
   );
 }
