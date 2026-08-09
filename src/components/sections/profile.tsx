@@ -1,16 +1,13 @@
 "use client";
 import Image from "next/image";
 import { ThemeToggle } from "../theme/theme-toggle";
-import {
-  IconCashBanknoteHeart,
-  IconHeart,
-} from "@tabler/icons-react";
+import { IconHeart } from "@tabler/icons-react";
 
 export const Profile = () => {
   return (
     <div className="absolute left-0 right-0 top-[22vh] md:left-[28%] md:right-[28%]">
       <div className="flex justify-between">
-        <div className="px-3 flex gap-5">
+        <div className="px-3.5 flex gap-6">
           <Image
             src="/assets/profile.jfif"
             alt="Profile picture"
@@ -19,14 +16,14 @@ export const Profile = () => {
             quality={90}
             priority
             fetchPriority="high"
-            className="rounded-radius ring-2 ring-border mt-1"
+            className="rounded-radius ring-2 ring-border mt-1.5"
           />
           <div>
             <h3 className="text-xs font-mono flex gap-2 items-center text-muted-foreground mt-4 mb-2">
               Hey It's me
               <IconHeart
                 size={14}
-                className="hover:fill-destructive hover:stroke-destructive"
+                className="hover:fill-destructive hover:stroke-destructive cursor-pointer"
               />
             </h3>
             <h1 className="text-2xl font-bold text-foreground font-inter leading-[16px] mb-2 tracking-tight">
@@ -37,7 +34,7 @@ export const Profile = () => {
             </h2>
           </div>
         </div>
-        <div className="py-2 px-3">
+        <div className="py-2 px-3.5">
           <ThemeToggle />
         </div>
       </div>

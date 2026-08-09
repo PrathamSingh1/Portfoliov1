@@ -47,14 +47,6 @@
     --color-card-color-foreground: var(--card-color-foreground);
     --color-hr: var(--hr-color);
     --color-muted-light: var(--muted-light);
-    --spacing-1: 6px;
-    --spacing-2: 8px;
-    --spacing-3: 14px;
-    --spacing-4: 16px;
-    --spacing-5: 24px;
-    --spacing-6: 32px;
-    --spacing-7: 40px;
-    --spacing-8: 70px;
 }
 
 @layer base {
