@@ -6,7 +6,7 @@ import { HorizontalLine } from "../ui/horizontal-line";
 
 export const Profile = () => {
   return (
-    <div className="px-3.5 py-1.5 relative">
+    <div className="py-1.5 relative mb-1.5">
       <HorizontalLine className="top-0" />
 
       <div className="flex justify-between">

@@ -1,5 +1,7 @@
 import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
+import { About } from "@/components/sections/about";
+import { GithubGraph } from "@/components/sections/github-graph";
 import { Profile } from "@/components/sections/profile";
 import { VerticalLine } from "@/components/ui/vertical-line";
 
@@ -12,8 +14,9 @@ export default function Home() {
       </div>
       <Container className="min-h-screen">
         <Banner />
-
         <Profile />
+        <About />
+        <GithubGraph />
       </Container>
     </div>
   );

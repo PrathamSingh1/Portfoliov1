@@ -8,12 +8,13 @@ import {
   TwitterIcon,
 } from "../icons/icons";
 import { Button } from "../ui/button";
+import { HorizontalLine } from "../ui/horizontal-line";
 
 export const About = () => {
   return (
-    <div className="absolute left-0 right-0 top-[calc(22vh+110px)] md:left-[28%] md:right-[28%] px-3.5 py-6 font-figtree text-sm leading-[16px] text-muted-foreground">
+    <div className="px-3.5 py-6 font-figtree relative text-sm text-muted-foreground leading-6">
       <div className="mb-6">
-        <p className="mb-2">
+        <p className="">
           Yup! I’m a{" "}
           <span className="text-foreground font-medium">
             Full Stack Engineer
@@ -27,7 +28,7 @@ export const About = () => {
         </p>
       </div>
       <div className="mb-4.5">
-        <p className="mb-2">
+        <p className="">
           I love both{" "}
           <span className="text-foreground font-medium">Design</span>{" "}
           &{" "}
@@ -36,7 +37,7 @@ export const About = () => {
           </span>
           . so, That means I can
         </p>
-        <p className="mb-2">
+        <p className="">
           create delightful interactions & functional websites. I'm
           always looking
         </p>
@@ -84,6 +85,7 @@ export const About = () => {
           </Button>
         </div>
       </div>
+      <HorizontalLine className="bottom-0" />
     </div>
   );
 };

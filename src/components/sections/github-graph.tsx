@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
+import { Heading } from "../ui/heading";
+import { HorizontalLine } from "../ui/horizontal-line";
 
 interface ContributionDay {
   contributionCount: number;
@@ -215,12 +217,16 @@ export function GithubGraph() {
 
   return (
     <section
-      className="absolute left-0 right-0 top-[calc(22vh+280px)] md:left-[28%] md:right-[28%] px-3.5 pt-12 pb-6 font-figtree text-sm leading-[16px]"
+      className="px-3.5 py-3 relative font-figtree text-sm leading-[16px] mb-6"
       aria-labelledby="github-activity-title"
       aria-describedby="github-activity-summary"
     >
+      <Heading>GitHub Activity</Heading>
+      <div className="mb-6">
+        <HorizontalLine className="top-[40px]" />
+      </div>
       {/* Graph content — sits directly on the page background */}
-      <div className="relative py-4">
+      <div className="py-4">
         <div className="w-full">
           <div>
             <div className="mb-2 flex w-full justify-between text-[10px] text-zinc-400 dark:text-zinc-500">
