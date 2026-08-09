@@ -1,6 +1,10 @@
 "use client";
 import Image from "next/image";
 import { ThemeToggle } from "../theme/theme-toggle";
+import {
+  IconCashBanknoteHeart,
+  IconHeart,
+} from "@tabler/icons-react";
 
 export const Profile = () => {
   return (
@@ -18,8 +22,12 @@ export const Profile = () => {
             className="rounded-radius ring-2 ring-border mt-1"
           />
           <div>
-            <h3 className="text-xs font-mono text-muted-foreground mt-4 mb-2">
+            <h3 className="text-xs font-mono flex gap-2 items-center text-muted-foreground mt-4 mb-2">
               Hey It's me
+              <IconHeart
+                size={14}
+                className="hover:fill-destructive hover:stroke-destructive"
+              />
             </h3>
             <h1 className="text-2xl font-bold text-foreground leading-[16px] mb-2 tracking-tight">
               Pratham Singh
