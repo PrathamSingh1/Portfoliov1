@@ -1,7 +1,9 @@
 import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
 import { About } from "@/components/sections/about";
+import { GithubGraph } from "@/components/sections/github-graph";
 import { Profile } from "@/components/sections/profile";
+import { Heading } from "@/components/ui/heading";
 import { HorizontalLine } from "@/components/ui/horizontal-line";
 import { VerticalLine } from "@/components/ui/vertical-line";
 
@@ -45,6 +47,17 @@ export default function Home() {
 
       {/*Box 3: About section*/}
       <About />
+
+      {/*Box 4: Github section*/}
+      <div className="mt-6 flex flex-col relative z-10 scroll-mt-24">
+        <HorizontalLine className="top-[calc(22vh+280px)]" />
+        <Heading className="top-[calc(22vh+280px)]">
+          Github Activity
+        </Heading>
+        <HorizontalLine className="top-[calc(22vh+280px)] mt-10" />
+
+        <GithubGraph />
+      </div>
     </Container>
   );
 }
