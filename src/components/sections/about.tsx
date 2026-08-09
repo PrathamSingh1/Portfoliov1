@@ -1,9 +1,10 @@
+import { EmailIcon, TwitterIcon } from "../icons/icons";
 import { Button } from "../ui/button";
 
 export const About = () => {
   return (
-    <div className="absolute left-0 right-0 top-[calc(22vh+110px)] md:left-[28%] md:right-[28%] px-3 py-5 font-figtree text-sm leading-[16px] text-muted-foreground">
-      <div className="mb-5">
+    <div className="absolute left-0 right-0 top-[calc(22vh+110px)] md:left-[28%] md:right-[28%] px-3.5 py-6 font-figtree text-sm leading-[16px] text-muted-foreground">
+      <div className="mb-6">
         <p className="mb-2">
           Yup! I’m a{" "}
           <span className="text-foreground font-medium">
@@ -17,7 +18,7 @@ export const About = () => {
           make sense to me.
         </p>
       </div>
-      <div className="mb-5">
+      <div className="mb-6">
         <p className="mb-2">
           I love both{" "}
           <span className="text-foreground font-medium">Design</span>{" "}
@@ -35,7 +36,17 @@ export const About = () => {
           for new challenges and opportunities to grow as a developer.
         </p>
       </div>
-      <Button>Twitter DM</Button>
+      <div className="flex items-center gap-2">
+        <Button>
+          <TwitterIcon />
+          Twitter DM
+        </Button>
+        <span className="text-xs">OR</span>
+        <Button>
+          <EmailIcon />
+          Email Me
+        </Button>
+      </div>
     </div>
   );
 };

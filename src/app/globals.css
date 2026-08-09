@@ -51,7 +51,7 @@
 
 @layer base {
     :root {
-        --brand-color: #fff;
+        --brand-color: #000;
         --background: hsl(0 0% 100%);
         --foreground: hsl(200 10% 5%);
         --card: hsl(0 0% 100%);
@@ -77,8 +77,8 @@
         --chart-4: hsl(43 74% 66%);
         --chart-5: hsl(27 87% 67%);
         --radius-brand: 0.5rem;
-        --card-color: #1a1b1c;
-        --card-color-foreground: #1e1f20;
+        --card-color: #fff;
+        --card-color-foreground: hsl(0 0% 96%);
         --hr-color: #262626;
         --muted-light: #f5f5f5;
     }
