@@ -8,7 +8,7 @@ export const HorizontalLine = ({
   return (
     <div
       className={cn(
-        "absolute top-0 left-0 right-0 h-0 border-t border-black/30 dark:border-white/[0.15] pointer-events-none",
+        "absolute inset-x-0 h-0 border-t border-black/30 dark:border-white/[0.15] pointer-events-none left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen",
         className,
       )}
       style={{

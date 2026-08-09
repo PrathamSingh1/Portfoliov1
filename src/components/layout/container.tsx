@@ -9,12 +9,7 @@ function Container({
   className?: string;
 }) {
   return (
-    <div
-      className={cn(
-        "relative max-w-9xl mx-auto min-h-screen",
-        className,
-      )}
-    >
+    <div className={cn("max-w-[700px] mx-auto", className)}>
       {children}
     </div>
   );

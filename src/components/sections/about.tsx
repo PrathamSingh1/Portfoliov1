@@ -1,4 +1,12 @@
-import { EmailIcon, TwitterIcon } from "../icons/icons";
+import {
+  DMIcon,
+  DocsIcon,
+  EmailIcon,
+  GitHubIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  TwitterIcon,
+} from "../icons/icons";
 import { Button } from "../ui/button";
 
 export const About = () => {
@@ -18,7 +26,7 @@ export const About = () => {
           make sense to me.
         </p>
       </div>
-      <div className="mb-6">
+      <div className="mb-4.5">
         <p className="mb-2">
           I love both{" "}
           <span className="text-foreground font-medium">Design</span>{" "}
@@ -36,9 +44,9 @@ export const About = () => {
           for new challenges and opportunities to grow as a developer.
         </p>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 mb-4.5">
         <Button>
-          <TwitterIcon />
+          <DMIcon />
           Twitter DM
         </Button>
         <span className="text-xs">OR</span>
@@ -46,6 +54,35 @@ export const About = () => {
           <EmailIcon />
           Email Me
         </Button>
+      </div>
+      <div className="">
+        <h3 className="font-figtree text-base mb-4.5">
+          Here are my{" "}
+          <span className="font-medium text-foreground">socials</span>{" "}
+          links
+        </h3>
+        <div className="flex items-center flex-wrap gap-3 md:gap-3.5 md:flex">
+          <Button>
+            <GitHubIcon />
+            GitHub
+          </Button>
+          <Button>
+            <TwitterIcon />
+            Twitter
+          </Button>
+          <Button>
+            <LinkedinIcon />
+            Linkedin
+          </Button>
+          <Button>
+            <PinterestIcon />
+            Pinterest
+          </Button>
+          <Button>
+            <DocsIcon />
+            Resume
+          </Button>
+        </div>
       </div>
     </div>
   );

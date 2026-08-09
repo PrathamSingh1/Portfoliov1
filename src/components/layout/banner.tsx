@@ -5,14 +5,15 @@ export const Banner = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "absolute h-[22vh] left-0 right-0 md:left-[28%] md:right-[28%] top-0 -z-0 pointer-events-auto dark:bg-black shadow-[0_4px_12px_rgba(2,6,23,0.04)] dark:shadow-[0_4px_12px_rgba(2,6,23,0.10)]",
+        "pointer-events-none relative bg-background shadow-[0_4px_12px_rgba(2,6,23,0.04)] dark:shadow-[0_4px_12px_rgba(2,6,23,0.10)] w-full -z-0 select-none",
         className,
       )}
     >
       <Image
         src={"/banner/banner1.png"}
         alt="banner image"
-        fill
+        height={222}
+        width={841}
         fetchPriority="high"
         quality={100}
         className="object-cover object-center"

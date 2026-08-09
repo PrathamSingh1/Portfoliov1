@@ -10,7 +10,7 @@ export const VerticalLine = ({
       // Vertical Lines - Ultra-fine Micro Dots
 
       className={cn(
-        "absolute top-0 bottom-0 w-0 border-r border-black/30 dark:border-white/[0.15] pointer-events-none hidden md:block",
+        "absolute inset-y-0 w-0 border-r border-black/30 dark:border-white/[0.15] pointer-events-none hidden md:block",
         className,
       )}
       style={{

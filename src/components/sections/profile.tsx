@@ -2,10 +2,13 @@
 import Image from "next/image";
 import { ThemeToggle } from "../theme/theme-toggle";
 import { IconHeart } from "@tabler/icons-react";
+import { HorizontalLine } from "../ui/horizontal-line";
 
 export const Profile = () => {
   return (
-    <div className="absolute left-0 right-0 top-[22vh] md:left-[28%] md:right-[28%]">
+    <div className="px-3.5 py-1.5 relative">
+      <HorizontalLine className="top-0" />
+
       <div className="flex justify-between">
         <div className="px-3.5 flex gap-6">
           <Image
@@ -38,6 +41,7 @@ export const Profile = () => {
           <ThemeToggle />
         </div>
       </div>
+      <HorizontalLine className="-bottom-1.5" />
     </div>
   );
 };
