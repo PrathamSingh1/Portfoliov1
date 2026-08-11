@@ -42,7 +42,7 @@ export const ProjectCard = ({
   return (
     <div
       className={cn(
-        "border border-dashed border-foreground/15 p-3 h-105 w-80 rounded-2xl overflow-hidden cursor-pointer group",
+        "border border-dashed border-foreground/15 p-3 h-105 w-90 md:w-80 rounded-2xl overflow-hidden cursor-pointer group",
         className,
       )}
     >

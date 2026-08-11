@@ -4,6 +4,7 @@ import { Project } from "@/components/projects/project";
 import { About } from "@/components/sections/about";
 import { GithubGraph } from "@/components/sections/github-graph";
 import { Profile } from "@/components/sections/profile";
+import { Skills } from "@/components/skills/skills";
 import { VerticalLine } from "@/components/ui/vertical-line";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <GithubGraph />
         <Project />
+        <Skills />
       </Container>
     </div>
   );
