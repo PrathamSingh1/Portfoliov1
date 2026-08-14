@@ -1,9 +1,13 @@
 "use client";
 
 import { BlogList } from "@/components/blog/blog-list";
+import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { Heading } from "@/components/ui/heading";
+import { HorizontalLine } from "@/components/ui/horizontal-line";
+import { VerticalLine } from "@/components/ui/vertical-line";
 import { BlogPostPreview } from "@/types/blog";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -71,77 +75,38 @@ export function BlogPageClient({
   };
 
   return (
-    <Container className="py-16">
-      <div className="space-y-8">
-        {/* Header */}
-        <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-            Blogs
-          </h1>
-          <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-            Thoughts, tutorials, and insights on engineering, and
-            programming.
-          </p>
-        </div>
-
-        <Separator />
-
-        {/* Tags */}
-        {initialTags.length > 0 && (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold">Popular Tags</h2>
-              {selectedTag && (
-                <button
-                  onClick={() => handleTagClick(selectedTag)}
-                  className="text-muted-foreground hover:text-foreground text-sm underline"
-                >
-                  Clear filter
-                </button>
-              )}
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {initialTags.map((tag) => {
-                const postCount = getTagPostCount(tag);
-                const isSelected = selectedTag === tag;
-                return (
-                  <button
-                    key={tag}
-                    onClick={() => handleTagClick(tag)}
-                    className="transition-colors"
-                  >
-                    <Badge
-                      variant={isSelected ? "default" : "outline"}
-                      className="hover:bg-accent hover:text-accent-foreground cursor-pointer capitalize"
-                    >
-                      {tag} ({postCount})
-                    </Badge>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-        {/* Blog Posts */}
-        <div className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-semibold">
-              {selectedTag
-                ? `Posts tagged "${selectedTag}"`
-                : "Latest Posts"}
-              {filteredPosts.length > 0 && (
-                <span className="text-muted-foreground ml-2 text-sm font-normal">
-                  ({filteredPosts.length}{" "}
-                  {filteredPosts.length === 1 ? "post" : "posts"})
-                </span>
-              )}
-            </h2>
-          </div>
-
-          <BlogList posts={filteredPosts} />
-        </div>
+    <div className="relative min-h-screen">
+      <div className="max-w-[700px] mx-auto absolute inset-0 h-full w-full">
+        <VerticalLine className="left-0" />
+        <VerticalLine className="right-0" />
       </div>
-    </Container>
+      <HorizontalLine className="top-47" />
+
+      <Container className="">
+        <Banner />
+
+        <div className="px-3.5 py-6">
+          {/* Header */}
+          <div className="flex items-center justify-between relative pb-6">
+            <div className="">
+              <Heading className="text-2xl font-figtree">
+                Blogs
+              </Heading>
+              <p className="text-muted-foreground mx-auto max-w-2xl text-sm mt-2 font-figtree">
+                Notes from the journey—things I’ve built, lessons I’ve
+                learned, and ideas worth sharing.
+              </p>
+              <HorizontalLine className="bottom-0" />
+            </div>
+
+            <ThemeToggle />
+          </div>
+
+          <div className="">
+            <BlogList posts={filteredPosts} />
+          </div>
+        </div>
+      </Container>
+    </div>
   );
 }

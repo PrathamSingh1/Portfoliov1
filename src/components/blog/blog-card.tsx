@@ -6,7 +6,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { BlogPostPreview } from "@/types/blog";
-import { IconCalendar } from "@tabler/icons-react";
+import { IconArrowRight, IconCalendar } from "@tabler/icons-react";
 import { Link } from "next-view-transitions";
 import Image from "next/image";
 
@@ -56,12 +56,13 @@ export function BlogCard({ post }: BlogCardProps) {
       <div>
         <Link
           href={`/blog/${slug}`}
-          className="text-foreground/80 hover:text-foreground font-figtree flex items-center justify-center gap-2"
+          className="text-foreground/80 hover:text-foreground font-figtree text-sm flex items-center justify-center gap-2"
         >
-          Read More →
+          Read More
+          <IconArrowRight size={16} />
         </Link>
       </div>
-      <div className="absolute inset-0 top-6 bottom-6 -mx-3 -my-3 rounded-xl bg-muted opacity-0 duration-300 group-hover:opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 top-6 bottom-6 -mx-3 -my-3 rounded-xl dark:bg-muted bg-muted-foreground/30 opacity-0 duration-300 group-hover:opacity-20 pointer-events-none"></div>
     </Card>
   );
 }
