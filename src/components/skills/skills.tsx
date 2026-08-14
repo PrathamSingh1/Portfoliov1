@@ -149,6 +149,7 @@ export const Skills = ({ className }: { className?: string }) => {
           Vercel
         </SkillButton>
       </div>
+      <HorizontalLine className="bottom-0" />
     </div>
   );
 };
