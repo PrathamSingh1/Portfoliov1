@@ -2,12 +2,11 @@ import { Banner } from "@/components/layout/banner";
 import Container from "@/components/layout/container";
 import { Project } from "@/components/projects/project";
 import { About } from "@/components/sections/about";
-import { Blog } from "@/components/sections/blog";
+import Blog from "@/components/sections/blog";
 import { GithubGraph } from "@/components/sections/github-graph";
 import { Profile } from "@/components/sections/profile";
 import { Skills } from "@/components/skills/skills";
 import { VerticalLine } from "@/components/ui/vertical-line";
-import { IconArrowAutofitRightFilled } from "@tabler/icons-react";
 
 export default function Home() {
   return (
@@ -23,12 +22,7 @@ export default function Home() {
         <GithubGraph />
         <Project />
         <Skills />
-        <Blog
-          title="A deep dive into React State Management"
-          description="How react's state management works?"
-          postedAt="July 29, 2026"
-          buttonText={<IconArrowAutofitRightFilled size={18} />}
-        />
+        <Blog />
       </Container>
     </div>
   );

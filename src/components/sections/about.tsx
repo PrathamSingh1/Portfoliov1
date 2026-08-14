@@ -7,7 +7,7 @@ import {
   PinterestIcon,
   TwitterIcon,
 } from "../icons/icons";
-import { Button } from "../ui/button";
+import { Button } from "../core/ui/button";
 import { HorizontalLine } from "../ui/horizontal-line";
 
 export const About = () => {

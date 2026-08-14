@@ -39,7 +39,7 @@ export const Skills = ({ className }: { className?: string }) => {
       <div className="mb-6">
         <HorizontalLine className="top-[40px]" />
       </div>
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap py-3 items-center gap-2">
         <SkillButton>
           <HTMLIcon />
           HTML

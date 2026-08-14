@@ -15,7 +15,7 @@ export const Project = () => {
       <div className="mb-6">
         <HorizontalLine className="top-[40px]" />
       </div>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap py-3 gap-4">
         {featuredProjects.map((project, i) => (
           <ProjectCard
             key={i}
@@ -37,7 +37,7 @@ export const Project = () => {
             href="/projects"
             className="relative z-10 text-sm font-inter bg-accent px-3 py-2 rounded-radius text-muted-foreground hover:text-foreground transition-colors"
           >
-            View all projects →
+            View all →
           </Link>
         </div>
       )}

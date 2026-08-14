@@ -57,7 +57,7 @@ export const ProjectCard = ({
 
       <div className="pt-4">
         <div className="flex items-center justify-between gap-2">
-          <h3 className="text-[15px] font-medium text-foreground">
+          <h3 className="text-[15px] font-medium font-inter text-foreground">
             {title}
           </h3>
           <span
