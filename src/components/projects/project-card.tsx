@@ -104,14 +104,30 @@ export const ProjectCard = ({
             <p className="text-sm text-foreground font-inter">
               Technologies:
             </p>
+
             <div className="flex items-center gap-2 flex-wrap">
               {technologies.map((tech, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center cursor-pointer"
-                  title={tech.label}
+                  className="relative group/tech flex items-center justify-center cursor-pointer"
                 >
                   {tech.icon}
+
+                  <div
+                    className="
+                      absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+                      hidden group-hover/tech:block
+                      whitespace-nowrap
+                      rounded-md
+                      bg-foreground
+                      px-2 py-1
+                      text-xs text-background
+                      shadow-md
+                      z-50
+                    "
+                  >
+                    {tech.label}
+                  </div>
                 </div>
               ))}
             </div>
