@@ -8,6 +8,7 @@
     --font-mono: var(--font-jetbrains-mono);
     --font-inter: var(--font-inter);
     --font-figtree: var(--font-figtree);
+    --font-instrument: var(--font-instrument);
     --color-card: var(--card);
     --color-card-foreground: var(--card-foreground);
     --color-popover: var(--popover);
@@ -124,6 +125,10 @@
 
 .jetbrains-mono {
     font-family: var(--font-jetbrains-mono), monospace;
+}
+
+.instrument-font {
+    font-family: var(--font-instrument), sans-serif;
 }
 
 body {

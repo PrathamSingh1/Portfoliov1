@@ -28,7 +28,7 @@ export function BlogContent({
   return (
     <article className="mx-auto max-w-4xl">
       {/* Hero Section */}
-      <header className="mb-8 space-y-6">
+      <header className="mb-8 py-6 px-3.5">
         <div className="relative aspect-video overflow-hidden rounded-lg">
           <Image
             src={image}
@@ -39,34 +39,24 @@ export function BlogContent({
           />
         </div>
 
-        <div className="space-y-4">
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <Badge key={tag} variant="secondary">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-
-          <h1 className="text-4xl leading-tight font-bold lg:text-5xl">
+        <div className="py-6">
+          <h1 className="text-3xl font-instrument lg:text-5xl leading-[60px]">
             {title}
           </h1>
 
-          <p className="text-muted-foreground text-xl">
+          <p className="text-muted-foreground font-figtree text-xl">
             {description}
           </p>
 
-          <div className="text-muted-foreground flex items-center gap-2 text-sm">
+          <div className="text-muted-foreground flex items-center gap-2 mt-4 text-sm">
             <IconCalendar size={14} />
             <time dateTime={date}>{formattedDate}</time>
           </div>
         </div>
-
-        <Separator />
       </header>
 
       {/* Content */}
-      <div className="prose prose-neutral dark:prose-invert max-w-none">
+      <div className="prose prose-neutral dark:prose-invert max-w-none px-3.5">
         <MDXRemote
           source={content}
           components={BlogComponents}
@@ -76,7 +66,7 @@ export function BlogContent({
                 [
                   rehypeHighlight,
                   {
-                    theme: "github-dark",
+                    theme: "vesper",
                   },
                 ],
               ],

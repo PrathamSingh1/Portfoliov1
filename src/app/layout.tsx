@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Figtree, Inter, JetBrains_Mono } from "next/font/google";
+import {
+  Figtree,
+  Instrument_Serif,
+  Inter,
+  JetBrains_Mono,
+} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ViewTransitions } from "next-view-transitions";
@@ -14,6 +19,12 @@ const figtree = Figtree({
   variable: "--font-figtree",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const instrument = Instrument_Serif({
+  variable: "--font-instrument",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const inter = Inter({
@@ -33,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <ViewTransitions>
       <html
         lang="en"
-        className={`${figtree.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+        className={`${figtree.variable} ${inter.variable} ${jetbrainsMono.variable} ${instrument.variable} h-full antialiased`}
         suppressHydrationWarning
       >
         <body

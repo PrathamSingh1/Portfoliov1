@@ -29,7 +29,7 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <h1 className="mb-6 text-4xl font-bold" {...props}>
+    <h1 className="mb-6 text-4xl font-instrument" {...props}>
       {children}
     </h1>
   ),
@@ -40,7 +40,7 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <h2 className="mt-8 mb-4 text-3xl font-semibold" {...props}>
+    <h2 className="mt-8 mb-4 text-3xl font-instrument" {...props}>
       {children}
     </h2>
   ),
@@ -51,9 +51,20 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <h3 className="mt-6 mb-3 text-2xl font-medium" {...props}>
+    <h3 className="mt-6 mb-3 text-2xl font-instrument" {...props}>
       {children}
     </h3>
+  ),
+  h4: ({
+    children,
+    ...props
+  }: {
+    children: React.ReactNode;
+    [key: string]: unknown;
+  }) => (
+    <h4 className="mt-6 mb-3 text-xl font-instrument" {...props}>
+      {children}
+    </h4>
   ),
   p: ({
     children,
@@ -62,7 +73,10 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <p className="text-muted-foreground mb-4 leading-7" {...props}>
+    <p
+      className="text-muted-foreground mb-4 leading-7 font-figtree"
+      {...props}
+    >
       {children}
     </p>
   ),
@@ -73,7 +87,10 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <ul className="mb-4 ml-6 list-disc space-y-2" {...props}>
+    <ul
+      className="mb-4 ml-6 list-disc space-y-2 font-figtree"
+      {...props}
+    >
       {children}
     </ul>
   ),
@@ -84,7 +101,10 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <ol className="mb-4 ml-6 list-decimal space-y-2" {...props}>
+    <ol
+      className="mb-4 ml-6 list-decimal space-y-2 font-figtree"
+      {...props}
+    >
       {children}
     </ol>
   ),
@@ -95,7 +115,10 @@ export const BlogComponents = {
     children: React.ReactNode;
     [key: string]: unknown;
   }) => (
-    <li className="text-muted-foreground leading-7" {...props}>
+    <li
+      className="text-muted-foreground leading-7 font-figtree"
+      {...props}
+    >
       {children}
     </li>
   ),
@@ -161,7 +184,7 @@ export const BlogComponents = {
 
     return (
       <code
-        className="rounded px-2 py-1 font-mono text-sm"
+        className="px-2 py-1 rounded font-mono text-sm"
         {...props}
       >
         {children}
