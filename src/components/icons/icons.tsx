@@ -289,7 +289,7 @@ export const NeonDBIcon = ({ className }: { className?: string }) => {
           <stop
             offset="1"
             stopColor="#B9FFB3"
-            stop-opacity="0"
+            stopOpacity="0"
           ></stop>
         </linearGradient>
         <linearGradient
@@ -300,11 +300,11 @@ export const NeonDBIcon = ({ className }: { className?: string }) => {
           y2="21.476"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#1A1A1A" stop-opacity="0.9"></stop>
+          <stop stopColor="#1A1A1A" stopOpacity="0.9"></stop>
           <stop
             offset="1"
             stopColor="#1A1A1A"
-            stop-opacity="0"
+            stopOpacity="0"
           ></stop>
         </linearGradient>
       </defs>
@@ -390,8 +390,8 @@ export const CursorIdeIcon = ({
           y1="12"
           y2="24"
         >
-          <stop offset="0.16" stop-opacity="0.39"></stop>
-          <stop offset="0.658" stop-opacity="0.8"></stop>
+          <stop offset="0.16" stopOpacity="0.39"></stop>
+          <stop offset="0.658" stopOpacity="0.8"></stop>
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -401,8 +401,8 @@ export const CursorIdeIcon = ({
           y1="6.037"
           y2="12.15"
         >
-          <stop offset="0.182" stop-opacity="0.31"></stop>
-          <stop offset="0.715" stop-opacity="0"></stop>
+          <stop offset="0.182" stopOpacity="0.31"></stop>
+          <stop offset="0.715" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -412,8 +412,8 @@ export const CursorIdeIcon = ({
           y1="0"
           y2="18"
         >
-          <stop stop-opacity="0.6"></stop>
-          <stop offset="0.667" stop-opacity="0.22"></stop>
+          <stop stopOpacity="0.6"></stop>
+          <stop offset="0.667" stopOpacity="0.22"></stop>
         </linearGradient>
       </defs>
     </svg>

@@ -29,7 +29,7 @@ export function BlogCard({ post }: BlogCardProps) {
       <div>
         <CardContent>
           <div className="">
-            <Link href={`/blog/${slug}`}>
+            <Link href={`/blogs/${slug}`}>
               <h3 className="transition-colors duration-200 text-sm font-figtree text-foreground">
                 {title}
               </h3>
@@ -55,7 +55,7 @@ export function BlogCard({ post }: BlogCardProps) {
       </div>
       <div>
         <Link
-          href={`/blog/${slug}`}
+          href={`/blogs/${slug}`}
           className="text-foreground/80 hover:text-foreground font-figtree text-sm flex items-center justify-center gap-2"
         >
           Read More

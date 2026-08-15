@@ -19,7 +19,7 @@ export default function ProjectPage() {
       <Container className="">
         <Banner />
 
-        <div className="px-3.5 py-6">
+        <div className="px-3.5 py-6 pb-30">
           {/* Header */}
           <div className="flex items-center justify-between relative pb-6">
             <div className="">

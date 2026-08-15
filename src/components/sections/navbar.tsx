@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <div
       id="navigation-menu"
-      className="fixed bottom-4 left-1/2 h-fit -translate-x-1/2 font-inter text-[10px] rounded-radius px-5 py-1.5 sm:bottom-8 border border-border/50 bg-background/60 shadow-md backdrop-blur-md z-[999]"
+      className="fixed bottom-4 left-1/2 h-fit -translate-x-1/2 font-inter text-[10px] rounded-2xl px-5 py-1.5 sm:bottom-8 border border-border/50 bg-background/60 shadow-md backdrop-blur-md z-[999]"
     >
       <div className="flex flex-row gap-8">
         <div className="relative">
