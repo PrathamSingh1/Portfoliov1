@@ -1,14 +1,7 @@
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { BlogPostPreview } from "@/types/blog";
 import { IconArrowRight, IconCalendar } from "@tabler/icons-react";
 import { Link } from "next-view-transitions";
-import Image from "next/image";
 
 interface BlogCardProps {
   post: BlogPostPreview;
@@ -16,7 +9,7 @@ interface BlogCardProps {
 
 export function BlogCard({ post }: BlogCardProps) {
   const { slug, frontmatter } = post;
-  const { title, description, image, tags, date } = frontmatter;
+  const { title, description, date } = frontmatter;
 
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
