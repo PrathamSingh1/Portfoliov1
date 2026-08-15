@@ -12,7 +12,7 @@ export const Profile = () => {
       <div className="flex justify-between">
         <div className="px-3.5 flex gap-6">
           <Image
-            src="/assets/profile.jfif"
+            src="/assets/profile.jpg"
             alt="Profile picture"
             width={100}
             height={100}
