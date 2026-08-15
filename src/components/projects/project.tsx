@@ -34,7 +34,7 @@ export const Project = () => {
           {/* line sits behind, vertically centered in this wrapper */}
           <HorizontalLine className="top-1/2 -translate-y-1/2 bg-foreground/40 z-0" />
           <Link
-            href="/projects"
+            href="/project"
             className="relative z-10 text-sm font-inter bg-accent px-3 py-2 rounded-radius text-muted-foreground hover:text-foreground transition-colors"
           >
             View all →
