@@ -96,7 +96,7 @@ export default function ResumePage() {
               fill
               preload
               sizes="(min-width: 768px) 40vw, 100vw"
-              quality={75}
+              quality={100}
               className="object-contain"
             />
           </div>
