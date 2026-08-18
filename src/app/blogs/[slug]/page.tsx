@@ -88,7 +88,7 @@ export default async function BlogPostPage({
           {/* Back Button */}
           <div className="py-6 px-3.5 flex items-center justify-between">
             <Link
-              href="/blog"
+              href="/blogs"
               className="flex items-center w-fit gap-2"
             >
               <button
@@ -133,7 +133,7 @@ export default async function BlogPostPage({
           )}
 
           {/* Back to Blog CTA */}
-          <div className="text-center">
+          <div className="text-center pb-30">
             <Separator className="mb-8" />
             <Button
               size="sm"

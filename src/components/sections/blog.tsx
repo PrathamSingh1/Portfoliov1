@@ -11,7 +11,7 @@ export default function Blog({ className }: { className?: string }) {
   const posts = getPublishedBlogPosts();
 
   return (
-    <div className={cn("relative px-3.5 py-3", className)}>
+    <div className={cn("relative px-3.5 py-3 pb-30", className)}>
       <Heading>Blogs</Heading>
       <HorizontalLine className="top-[40px]" />
       <div className="py-3">
